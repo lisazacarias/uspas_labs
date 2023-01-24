@@ -1,0 +1,6 @@
+make cordicg.vcd
+gtkwave cordic.vcd
+
+//to recompile CSVs
+make clean
+make
