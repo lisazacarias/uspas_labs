@@ -79,7 +79,8 @@ end else if (op==1) begin
 	xin <= xin - (yin>>>9) - (xin>>>15);
 end else begin
 	phasein<=phasein+53;
-	if (cc>30) yin<=yin+1;
+	//if (cc>30) yin<=yin+1;
+	if (cc>30) yin<=0;
 end
 
 wire signed [width-1:0] xout, yout;
