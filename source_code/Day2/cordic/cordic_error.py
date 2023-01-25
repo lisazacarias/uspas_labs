@@ -30,6 +30,15 @@ def get_rms(csvfile) -> float:
 def main():
     print("RTOP RMS:", get_rms(open("cordic_rtop.csv")))
     print("PTOR RMS:", get_rms(open("cordic_ptor.csv")))
+    
+    print("RTOP DW16 RMS:", get_rms(open("rtop_dw16.csv")))
+    print("PTOR DW16 RMS:", get_rms(open("ptor_dw16.csv")))
+    
+    print("RTOP DW21 RMS:", get_rms(open("rtop_dw21.csv")))
+    print("PTOR DW21 RMS:", get_rms(open("ptor_dw21.csv")))
+    
+    print("RTOP NSTG10 RMS:", get_rms(open("rtop_nstg10.csv")))
+    print("PTOR NSTG10 RMS:", get_rms(open("ptor_nstg10.csv")))
 
 
 if __name__ == "__main__":
