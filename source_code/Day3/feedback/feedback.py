@@ -64,7 +64,6 @@ def main():
     
     m = linregress(time_data, phase_data).slope
     print(m)
-    print((phase_data[-1] - phase_data[0]) / (time_data[-1] - time_data[0]))
     
     fig, slope_ax = plt.subplots()
     slope_ax.plot(time_data, phase_data)
